@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Drake McIntyre
+   Date: 10/24/23
+	
+   Filename: la_styles.css
+
+*/
+
+/* HTML and Body Styles */
+
+html {
+   background-color: black;
+}
+
+body {
+   color: black;
+   background-color: transparent;
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+
+/* Page Body Styles */
+
+body {
+   background-color: white;
+   font-family: Verdana, Geneva, Arial, sans-serif;
+   margin: auto;
+   width: auto;
+}
+
+body {
+   margin-left: auto;
+   margin-right: auto;
+   max-width: auto;
+   min-width: auto;
+   width: 100%;
+}
+
+
+/* Page Header Styles */
+
+body > header > img {
+   display: block;
+   width: auto;
+   margin: auto;
+}
+
+body > img {
+   position: relative;
+   padding-left: auto;
+   padding-right: 500px;
+   float: left;
+   box-sizing: border-box;
+}
+
+body > header > nav#topLinks {
+   background-color: black;
+   color: white;
+   line-height: 2.0em;
+   text-align: right;
+   padding: 5px;
+}
+
+nav#topLinks a:link, nav#topLinks a:visited {
+	color: white;
+}
+
+nav#topLinks a:hover, nav#topLinks a:active {
+	color: rgb(248, 237, 212);
+}
+
+nav#mainLinks ul li {
+	background-color: rgb(70, 70, 210);	
+	display: block;
+	float: left;
+	text-align: center;
+   width: auto;
+	min-width: 16.66%;
+}
+
+nav#mainLinks ul li a {
+	color: rgb(255, 255, 255);	
+	display: block;
+	height: 2.5em;	
+	text-align: center;
+	line-height: 2.5em;	
+}
+
+nav#mainLinks a:link, nav#mainLinks a:visited {
+	color: white;
+}
+
+nav#mainLinks a:hover, nav#mainLinks a:active {
+	background-color: rgb(140,140,255);
+}
+
+
+/* Center Column */
+
+img {
+   width: 25%;
+   display: grid;
+   margin: auto;
+}
+
+
+
+/* Paragraph Styles */
+
+p {
+   margin: 1em;
+   font-size: 1em;
+}
+
+
+/* Grid Rows Styles */
+
+div.row {
+   clear: both;
+}
+
+div.row:after {
+   clear: both;
+   content: "";
+}
+
+
+/* Grid Column Styles */
+
+* {
+   box-sizing: border-box;
+ }
+ 
+ .column {
+   float: left;
+   width: 33.33%;
+   padding: 5px;
+ }
+
+ /* Clearfix (clear floats) */
+.row::after {
+   content: "";
+   clear: both;
+   display: table;
+}
